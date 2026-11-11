@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/rafael/projects/poker/poker-equity/src/card.cpp" "CMakeFiles/hello.dir/src/card.cpp.o" "gcc" "CMakeFiles/hello.dir/src/card.cpp.o.d"
   "/Users/rafael/projects/poker/poker-equity/src/main.cpp" "CMakeFiles/hello.dir/src/main.cpp.o" "gcc" "CMakeFiles/hello.dir/src/main.cpp.o.d"
   )
 
