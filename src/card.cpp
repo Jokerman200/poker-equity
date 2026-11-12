@@ -18,7 +18,6 @@ int parse_card(const std::string & text ){
     if (text.size() != 2){
         return -1;
     }
-
     // so if i got As i have an ace and ik its spades 
     // hearts hve suit 0 diamonds suit 1 clubs have suit 2 spades have suit 3
     std::string  ranks = "23456789TJQKA";
@@ -30,4 +29,15 @@ int parse_card(const std::string & text ){
     num = ranks.find(text[0]);
     num += suits.find(text[1]) * 13;
     return num;
+}
+
+vector<int> parse_cards(const string & hand){
+    size_t i = 0;
+    vector<int> result;
+    while(i < hand.size()){
+        int res = parse_card(hand.substr(i, 2));
+        result.push_back(res);
+        i += 2;
+    }
+    return result;
 }

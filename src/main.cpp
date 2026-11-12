@@ -5,4 +5,9 @@ int main() {
     std::cout << "hello poker\n";
     std::cout << rank_of(30) << " " << suit_of(30) << " " << rank_of(51) << " " << suit_of(51) << "\n";
     std::cout << parse_card("As") << " " << parse_card("Asd") << " " << parse_card("Td") << "\n";
+    std::vector<int> cards = parse_cards("AsKdJh6c2h7");
+    for (int c : cards) {
+        std::cout << c << " ";
+    }
+    std::cout << "\n";
 }
